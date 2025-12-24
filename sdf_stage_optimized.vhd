@@ -66,23 +66,24 @@ begin
     s_bf_dif_im <= s_fifo_out_im - s_in_im;
 
     -- 2. Single-path Delay Feedback Logic (Shift Register) [cite: 750]
+    -- Corrected FIFO logic for sdf_stage.vhd
     process(clk)
     begin
         if rising_edge(clk) then
-            if rst = '1' then -- [cite: 756]
-                fifo_mem <= (others => (others => '0')); -- [cite: 758, 759]
+            if rst = '1' then
+                fifo_mem <= (others => (others => '0'));
             else
-                -- Shift Logic [cite: 761]
-                for i in 0 to G_DELAY-2 loop
-                    fifo_mem(i) <= fifo_mem(i+1);
-                end loop;
+                -- Properly inferred shift register for delay stages
+                if G_DELAY > 1 then
+                    fifo_mem(0 to G_DELAY-2) <= fifo_mem(1 to G_DELAY-1);
+                end if;
 
-                -- Feedback Mux Logic [cite: 763, 769]
+                -- Feedback Mux Logic
                 if i_mode = '0' then
-                    -- Load Mode: Put input into FIFO [cite: 765, 766]
+                    -- Load Mode: Put complex input into FIFO
                     fifo_mem(G_DELAY-1) <= s_in_im & s_in_re; 
                 else
-                    -- Calculation Mode: Put Butterfly Difference into FIFO [cite: 769, 770]
+                    -- Calculation Mode: Put Butterfly Difference into FIFO
                     fifo_mem(G_DELAY-1) <= s_bf_dif_im & s_bf_dif_re;
                 end if;
             end if;

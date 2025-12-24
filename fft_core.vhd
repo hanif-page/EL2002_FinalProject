@@ -1,14 +1,40 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+-- MANDATORY ENTITY DECLARATION [cite: 22]
+entity fft_core is
+    Port (
+        clk       : in  STD_LOGIC;
+        rst       : in  STD_LOGIC;
+        i_start   : in  STD_LOGIC;
+        i_data_re : in  STD_LOGIC_VECTOR(15 downto 0);
+        i_data_im : in  STD_LOGIC_VECTOR(15 downto 0);
+        o_data_re : out STD_LOGIC_VECTOR(15 downto 0);
+        o_data_im : out STD_LOGIC_VECTOR(15 downto 0);
+        o_idx     : out STD_LOGIC_VECTOR(5 downto 0);
+        o_done    : out STD_LOGIC
+    );
+end fft_core;
+
+-- Inside fft_core.vhd
 architecture Behavioral of fft_core is
 
     component sdf_stage is
         Generic ( G_DELAY : integer );
         Port (
-            clk, rst, i_mode : in STD_LOGIC;
-            i_data_re, i_data_im : in STD_LOGIC_VECTOR(15 downto 0);
-            i_w_re, i_w_im : in STD_LOGIC_VECTOR(15 downto 0);
-            o_data_re, o_data_im : out STD_LOGIC_VECTOR(15 downto 0)
+            clk       : in  STD_LOGIC; -- Separate these
+            rst       : in  STD_LOGIC; -- Separate these
+            i_mode    : in  STD_LOGIC;
+            i_data_re : in  STD_LOGIC_VECTOR(15 downto 0);
+            i_data_im : in  STD_LOGIC_VECTOR(15 downto 0);
+            i_w_re    : in  STD_LOGIC_VECTOR(15 downto 0);
+            i_w_im    : in  STD_LOGIC_VECTOR(15 downto 0);
+            o_data_re : out STD_LOGIC_VECTOR(15 downto 0);
+            o_data_im : out STD_LOGIC_VECTOR(15 downto 0)
         );
     end component;
+    -- ...
 
     component twiddle_rom is
         Port (
