@@ -61,27 +61,30 @@ architecture Behavioral of fft_core is
     signal addr1, addr2, addr3, addr4, addr5 : std_logic_vector(5 downto 0);
 
 begin
-    -- Simple Global Counter for Control
+    -- Refactored Control and Done Logic
     process(clk)
     begin
         if rising_edge(clk) then
             if rst = '1' then
-                r_cnt <= (others => '0');
+                r_cnt    <= (others => '0');
                 r_active <= '0';
-                o_done <= '0';
+                -- Removed o_done <= '0' from here as it is now combinational
             else
                 if i_start = '1' then
                     r_active <= '1';
                 end if;
-              
+            
                 if r_active = '1' then
                     r_cnt <= r_cnt + 1;
-                    if r_cnt = "111111" then o_done <= '1'; else o_done <= '0'; end if;
                 end if;
             end if;
         end if;
     end process;
-    o_idx <= std_logic_vector(r_cnt);
+
+    -- COMBINATIONAL ASSIGNMENTS (Fixed Alignment)
+    o_idx  <= std_logic_vector(r_cnt);
+    -- This pulse will now appear exactly when o_idx is 63
+    o_done <= '1' when (r_cnt = "111111" and r_active = '1') else '0';
 
     stage_re(0) <= i_data_re;
     stage_im(0) <= i_data_im;
