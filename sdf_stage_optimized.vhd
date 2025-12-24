@@ -11,15 +11,15 @@ entity sdf_stage is
         G_DELAY : integer := 32  -- Delay Length: 32, 16, 8, 4, 2, or 1 [cite: 678, 901-919]
     );
     Port (
-        clk       : in  STD_LOGIC; [cite: 681]
-        rst       : in  STD_LOGIC; [cite: 682]
+        clk       : in  STD_LOGIC; -- [cite: 681]
+        rst       : in  STD_LOGIC; -- [cite: 682]
         i_mode    : in  STD_LOGIC; -- 0: Load/Feedback, 1: Butterfly Calculation [cite: 683, 687]
-        i_data_re : in  STD_LOGIC_VECTOR(15 downto 0); [cite: 684]
-        i_data_im : in  STD_LOGIC_VECTOR(15 downto 0); [cite: 689]
-        i_w_re    : in  STD_LOGIC_VECTOR(15 downto 0); [cite: 692]
-        i_w_im    : in  STD_LOGIC_VECTOR(15 downto 0); [cite: 692]
-        o_data_re : out STD_LOGIC_VECTOR(15 downto 0); [cite: 692]
-        o_data_im : out STD_LOGIC_VECTOR(15 downto 0)  [cite: 693]
+        i_data_re : in  STD_LOGIC_VECTOR(15 downto 0); -- [cite: 684]
+        i_data_im : in  STD_LOGIC_VECTOR(15 downto 0); -- [cite: 689]
+        i_w_re    : in  STD_LOGIC_VECTOR(15 downto 0); -- [cite: 692]
+        i_w_im    : in  STD_LOGIC_VECTOR(15 downto 0); -- [cite: 692]
+        o_data_re : out STD_LOGIC_VECTOR(15 downto 0); -- [cite: 692]
+        o_data_im : out STD_LOGIC_VECTOR(15 downto 0)  -- [cite: 693]
     );
 end sdf_stage;
 
@@ -69,8 +69,8 @@ begin
     process(clk)
     begin
         if rising_edge(clk) then
-            if rst = '1' then [cite: 756]
-                fifo_mem <= (others => (others => '0')); [cite: 758, 759]
+            if rst = '1' then -- [cite: 756]
+                fifo_mem <= (others => (others => '0')); -- [cite: 758, 759]
             else
                 -- Shift Logic [cite: 761]
                 for i in 0 to G_DELAY-2 loop
@@ -110,13 +110,13 @@ begin
     -- 4. Instance of Complex Multiplier (External Module) [cite: 739, 740]
     inst_mult: complex_mult
         port map (
-            clk       => clk, [cite: 742]
-            i_data_re => s_mult_in_re, [cite: 743]
-            i_data_im => s_mult_in_im, [cite: 744]
-            i_w_re    => i_w_re, [cite: 745]
-            i_w_im    => i_w_im, [cite: 746]
-            o_res_re  => o_data_re, [cite: 747]
-            o_res_im  => o_data_im  [cite: 1408]
+            clk       => clk, -- [cite: 742]
+            i_data_re => s_mult_in_re, -- [cite: 743]
+            i_data_im => s_mult_in_im, -- [cite: 744]
+            i_w_re    => i_w_re, -- [cite: 745]
+            i_w_im    => i_w_im, -- [cite: 746]
+            o_res_re  => o_data_re, -- [cite: 747]
+            o_res_im  => o_data_im  -- [cite: 1408]
         );
 
 end Behavioral;
