@@ -1,0 +1,46 @@
+# Compile of complex_mult.vhd was successful.
+# Compile of tb_complex_mult.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_complex_mult
+# vsim -gui work.tb_complex_mult 
+# Start time: 13:30:07 on Dec 11,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_complex_mult(behavior)
+# Loading work.complex_mult(behavioral)
+add wave -position insertpoint sim:/tb_complex_mult/uut/*
+run -200ns
+# Unknown option: 200ns
+# ** UI-Msg: (vsim-4005) Invalid argument '-200ns'.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+run 200ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_mult/wave.do
+quit -sim
+# End time: 13:56:17 on Dec 11,2025, Elapsed time: 0:26:10
+# Errors: 0, Warnings: 8
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project magnitude_calc
+# Compile of magnitude_calc.vhd was successful.
+# Compile of tb_magnitude_calc.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_magnitude_calc
+# vsim -gui work.tb_magnitude_calc 
+# Start time: 13:57:22 on Dec 11,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_magnitude_calc(behavior)
+# Loading work.magnitude_calc(behavioral)
+add wave -position insertpoint sim:/tb_magnitude_calc/uut/*
+run 200ns
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 25 ns  Iteration: 1  Instance: /tb_magnitude_calc/uut
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 25 ns  Iteration: 1  Instance: /tb_magnitude_calc/uut
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 35 ns  Iteration: 1  Instance: /tb_magnitude_calc/uut
+# End time: 15:39:17 on Dec 11,2025, Elapsed time: 1:41:55
+# Errors: 0, Warnings: 9

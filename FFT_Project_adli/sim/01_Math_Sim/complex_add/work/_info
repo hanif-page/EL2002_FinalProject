@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Ecomplex_add
+Z0 w1765369135
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z4 dC:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add
+Z5 8C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/complex_add.vhd
+Z6 FC:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/complex_add.vhd
+l0
+L5 1
+VVNUCGK>3zWo=]XMbNX60S0
+!s100 Q]_>GD]cgVB=44o4oD3DD3
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1765433847
+!i10b 1
+Z9 !s108 1765433847.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/complex_add.vhd|
+Z11 !s107 C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/complex_add.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 11 complex_add 0 22 VNUCGK>3zWo=]XMbNX60S0
+!i122 0
+l20
+L18 18
+V:BkIT634me<A84<EWmhcL3
+!s100 dA4eMX;?WiXj0GY<:JL_c0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etb_complex_add
+Z14 w1765369128
+R1
+R2
+R3
+!i122 1
+R4
+Z15 8C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/tb_complex_add.vhd
+Z16 FC:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/tb_complex_add.vhd
+l0
+L5 1
+V]M:YY<4@T4ze3;8>@=>nb1
+!s100 6dOKQi5C2zeoZERU60aEQ3
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/tb_complex_add.vhd|
+!s107 C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/tb_complex_add.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 14 tb_complex_add 0 22 ]M:YY<4@T4ze3;8>@=>nb1
+!i122 1
+l34
+L9 88
+V=]52^ER::0J`>LB8lVX;R1
+!s100 i93SAdZ]iTOQmhnneQPcA1
+R7
+32
+R8
+!i10b 1
+R9
+R17
+Z18 !s107 C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_add/tb_complex_add.vhd|
+!i113 1
+R12
+R13

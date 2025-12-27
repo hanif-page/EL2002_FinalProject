@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Dec 27 19:19:10 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : uart_fft_sys
+Top-level Entity Name : uart_fft_sys
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 5,492 / 6,272 ( 88 % )
+    Total combinational functions : 4,950 / 6,272 ( 79 % )
+    Dedicated logic registers : 1,296 / 6,272 ( 21 % )
+Total registers : 1296
+Total pins : 6 / 92 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 12 / 30 ( 40 % )
+Total PLLs : 0 / 2 ( 0 % )

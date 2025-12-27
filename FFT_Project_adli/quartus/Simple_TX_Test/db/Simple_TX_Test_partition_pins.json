@@ -1,0 +1,21 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_UART_TX",
+					"strict" : false
+				},
+				{
+					"name" : "i_Clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_UART_RX",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

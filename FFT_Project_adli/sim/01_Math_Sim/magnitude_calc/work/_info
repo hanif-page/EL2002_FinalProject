@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/complex_mult
+Emagnitude_calc
+Z0 w1765436108
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z4 dC:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc
+Z5 8C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/magnitude_calc.vhd
+Z6 FC:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/magnitude_calc.vhd
+l0
+L5 1
+V0T_Hk>^6O65WLzATOaWR92
+!s100 OTA0AkZclI`TmX:liI9?h0
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1765436219
+!i10b 1
+Z9 !s108 1765436219.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/magnitude_calc.vhd|
+Z11 !s107 C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/magnitude_calc.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 14 magnitude_calc 0 22 0T_Hk>^6O65WLzATOaWR92
+!i122 0
+l31
+L17 83
+VX9W:=LEo=RC9:Gk8zzcKa1
+!s100 a`T<Y@HjbS2>34M68Z7o33
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etb_magnitude_calc
+Z14 w1765436131
+R1
+R2
+R3
+!i122 1
+R4
+Z15 8C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/tb_magnitude_calc.vhd
+Z16 FC:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/tb_magnitude_calc.vhd
+l0
+L5 1
+VkTAOkEg2PMCafX[Xd@32P0
+!s100 WJgP]?1^lGMzHU8]oHz@S1
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/tb_magnitude_calc.vhd|
+!s107 C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/tb_magnitude_calc.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 17 tb_magnitude_calc 0 22 kTAOkEg2PMCafX[Xd@32P0
+!i122 1
+l31
+L8 97
+VcHL@^m[lnH:B<hbG0]`@g2
+!s100 cALZF6PMX`F3]3PK85;mG3
+R7
+32
+R8
+!i10b 1
+R9
+R17
+Z18 !s107 C:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc/tb_magnitude_calc.vhd|
+!i113 1
+R12
+R13

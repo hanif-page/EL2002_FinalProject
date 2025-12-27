@@ -1,0 +1,79 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity tb_system_verify is
+end tb_system_verify;
+
+architecture behavior of tb_system_verify is
+    -- UUT
+    component FFT_System_Sim_Ready
+    Generic ( CLKS_PER_BIT : integer );
+    Port (
+        clk_50mhz, btn_rst, btn_start, btn_send, uart_rx : in std_logic;
+        uart_tx : out std_logic;
+        leds : out std_logic_vector(2 downto 0)
+    );
+    end component;
+
+    -- Signals
+    signal clk : std_logic := '0';
+    signal rst, start, send, rx, tx : std_logic := '0';
+    signal leds : std_logic_vector(2 downto 0);
+    
+    constant CLK_PERIOD : time := 20 ns;
+    -- PENTING: Kita pakai CLKS_PER_BIT = 4 agar simulasi super cepat
+    constant BIT_PERIOD : time := 4 * CLK_PERIOD; 
+
+begin
+    -- Instansiasi dengan Generic 4
+    uut: FFT_System_Sim_Ready generic map (CLKS_PER_BIT => 4)
+    port map (clk, rst, start, send, rx, tx, leds);
+
+    clk_proc: process begin
+        clk <= '0'; wait for CLK_PERIOD/2;
+        clk <= '1'; wait for CLK_PERIOD/2;
+    end process;
+
+    stim_proc: process
+        -- Helper procedure untuk kirim 1 byte UART
+        procedure UART_SEND(data : integer) is
+            variable vec : std_logic_vector(7 downto 0);
+        begin
+            vec := std_logic_vector(to_unsigned(data, 8));
+            rx <= '0'; wait for BIT_PERIOD; -- Start
+            for i in 0 to 7 loop
+                rx <= vec(i); wait for BIT_PERIOD;
+            end loop;
+            rx <= '1'; wait for BIT_PERIOD; -- Stop
+            wait for BIT_PERIOD; -- Jeda
+        end procedure;
+
+    begin
+        rst <= '1'; rx <= '1'; wait for 100 ns;
+        rst <= '0'; wait for 100 ns;
+
+        -- 1. FASE IDLE: Kirim 2 Byte (1 Data 16-bit)
+        -- Kita kirim angka 0x1234 (High=0x12, Low=0x34)
+        UART_SEND(16#12#); -- High Byte
+        UART_SEND(16#34#); -- Low Byte
+        
+        wait for 100 ns;
+
+        -- 2. FASE PROCESS: Tekan Start
+        start <= '1'; wait for CLK_PERIOD*2; start <= '0';
+        
+        -- Tunggu sampai LED Done nyala (LED(2))
+        wait until leds(2) = '1';
+        wait for 100 ns;
+
+        -- 3. FASE SEND: Tekan Send
+        send <= '1'; wait for CLK_PERIOD*2; send <= '0';
+
+        -- Sistem akan mengirim balik via UART TX
+        -- Kita tunggu dan lihat di waveform
+        wait for 2000 ns;
+        
+        wait;
+    end process;
+end behavior;

@@ -1,0 +1,30 @@
+# Compile of FFT_System_Sim_Ready.vhd was successful.
+# Compile of tb_FFT_System.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_fft_system
+# vsim -gui work.tb_fft_system 
+# Start time: 19:44:08 on Dec 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_fft_system(sim)
+# Loading work.fft_system_sim_ready(behavioral)
+# Loading work.debounce(behavioral)
+# Loading work.main_fsm(behavioral)
+# Loading work.uart_module(behavioral)
+add wave -position insertpoint sim:/tb_fft_system/UUT/*
+run 10ms
+# ** Note: --- MULAI MENGIRIM DATA UART ---
+#    Time: 500 ns  Iteration: 0  Instance: /tb_fft_system
+# ** Note: --- SELESAI MENGIRIM DATA ---
+#    Time: 282100 ns  Iteration: 0  Instance: /tb_fft_system
+# ** Note: --- TEKAN TOMBOL START ---
+#    Time: 282600 ns  Iteration: 0  Instance: /tb_fft_system
+# ** Note: --- TEKAN TOMBOL SEND ---
+#    Time: 284100 ns  Iteration: 0  Instance: /tb_fft_system
+# ** Note: --- SIMULASI SELESAI ---
+#    Time: 484600 ns  Iteration: 0  Instance: /tb_fft_system
+# WARNING: No extended dataflow license exists
+# End time: 19:51:26 on Dec 22,2025, Elapsed time: 0:07:18
+# Errors: 0, Warnings: 4

@@ -1,0 +1,270 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/adlys/Desktop/FFT_Project/sim/01_Math_Sim/magnitude_calc
+Edebounce
+Z0 w1766407357
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 18
+Z4 dC:/Users/adlys/Desktop/FFT_Project/sim/single_file
+Z5 8C:/Users/adlys/Desktop/FFT_Project/sim/single_file/FFT_System_Sim_Ready.vhd
+Z6 FC:/Users/adlys/Desktop/FFT_Project/sim/single_file/FFT_System_Sim_Ready.vhd
+l0
+L8 1
+V^SJ:bDf:g:XZ]mjCClgHi3
+!s100 @z7Lnc2MjFLT43@5nJ1cm3
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1766407431
+!i10b 1
+Z9 !s108 1766407431.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/adlys/Desktop/FFT_Project/sim/single_file/FFT_System_Sim_Ready.vhd|
+Z11 !s107 C:/Users/adlys/Desktop/FFT_Project/sim/single_file/FFT_System_Sim_Ready.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+Z14 DEx4 work 8 debounce 0 22 ^SJ:bDf:g:XZ]mjCClgHi3
+!i122 18
+l20
+L16 20
+VTG^je7[kEiVnoD6k5G2gD0
+!s100 7`liD3`c28l5lVU4i2kVH0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efft_system_sim_ready
+R0
+R1
+R2
+R3
+!i122 18
+R4
+R5
+R6
+l0
+L191 1
+VUO_6QIz[Z9>@U95F[=5UU0
+!s100 04YoI9n0AOGBLTF[=l@2c0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Abehavioral
+Z15 DEx4 work 11 uart_module 0 22 L5BESa0LdLHonC53HK0nh2
+Z16 DEx4 work 8 main_fsm 0 22 PYHHf^d0eQT?IHKMGe:f:0
+R14
+R1
+R2
+R3
+DEx4 work 20 fft_system_sim_ready 0 22 UO_6QIz[Z9>@U95F[=5UU0
+!i122 18
+l230
+L205 124
+VaMOVXA<54:Q2]bYMg3c3]1
+!s100 I4ReN=I@PJ0B@Id1I5E9Y0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Emain_fsm
+R0
+R2
+R3
+!i122 18
+R4
+R5
+R6
+l0
+L140 1
+VPYHHf^d0eQT?IHKMGe:f:0
+!s100 ^FBcF^F3j^:A;5oL1c1hL0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R16
+!i122 18
+l153
+L150 33
+V]Rf:jimif^1SW95Yg=5@S3
+!s100 E8MTkk<bzAPh0;]IWl=;h2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etb_fft_system
+Z17 w1766407194
+R1
+R2
+R3
+!i122 19
+R4
+Z18 8C:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_FFT_System.vhd
+Z19 FC:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_FFT_System.vhd
+l0
+L5 1
+V^3YB4[EZ?f3al<E9ZWb:02
+!s100 PD0cX<eW@NCXaXe?aLSdd2
+R7
+32
+R8
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_FFT_System.vhd|
+!s107 C:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_FFT_System.vhd|
+!i113 1
+R12
+R13
+Asim
+R1
+R2
+R3
+Z21 DEx4 work 13 tb_fft_system 0 22 ^3YB4[EZ?f3al<E9ZWb:02
+!i122 19
+l42
+Z22 L9 131
+Z23 VdKK_K4;Ifj^FAM9]CTdWF0
+Z24 !s100 >ngSo2YINYa>b>IaFfgjD3
+R7
+32
+R8
+!i10b 1
+R9
+R20
+Z25 !s107 C:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_FFT_System.vhd|
+!i113 1
+R12
+R13
+Etb_system_verify
+Z26 w1766335760
+R1
+R2
+R3
+!i122 13
+R4
+Z27 8C:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_system_verify.vhd
+Z28 FC:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_system_verify.vhd
+l0
+L5 1
+V;G172IYnOfh^CPAIXenhS1
+!s100 JGX=L7M;];W0Kjk>jgAhC0
+R7
+32
+Z29 !s110 1766403298
+!i10b 1
+Z30 !s108 1766403298.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_system_verify.vhd|
+Z32 !s107 C:/Users/adlys/Desktop/FFT_Project/sim/single_file/tb_system_verify.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 16 tb_system_verify 0 22 ;G172IYnOfh^CPAIXenhS1
+!i122 13
+l28
+L8 72
+V4m=j?m@]UJ_cn5>MDgb<i2
+!s100 kWQIKPBF3^eHn=:WaTM<=1
+R7
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R12
+R13
+Euart_module
+R0
+R1
+R2
+R3
+!i122 18
+R4
+R5
+R6
+l0
+L44 1
+VL5BESa0LdLHonC53HK0nh2
+!s100 8?bIM;k=SXN0^_EGfa:I<1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+R15
+!i122 18
+l66
+L58 75
+V9WClDMgVBzg2[UCXkm0X71
+!s100 XjhU0U0cjn;69Ac6:>ig`3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

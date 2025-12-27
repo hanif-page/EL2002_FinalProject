@@ -1,0 +1,1 @@
+{"func": "np.sin(10 * t) + 0.5 * np.sin(2 * t) + 3* np.sin(5 * t) + np.sin(3 * t) + 0.05 * np.sin(8 * t) + 0.2 * np.sin(12 * t) + 10 * np.sin(t)", "points": 64, "bits": 8, "scale": 9.71694990389361, "t_start": 0.0, "t_end": 6.283185307179586}
