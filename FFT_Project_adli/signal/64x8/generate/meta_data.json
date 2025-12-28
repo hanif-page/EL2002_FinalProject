@@ -1,1 +1,0 @@
-{"func": "(1 + 0.8 * np.sin(2 * np.pi * 4.5 * t)) * np.sin(2 * np.pi * 29 * t)", "points": 64, "bits": 8, "scale": 71.52472403917466, "t_start": 0.0, "t_end": 1}
