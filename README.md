@@ -4,6 +4,12 @@
 
 Project Assigned by: Nana Sutisna,. S.T., M.T., Ph.D.
 
+- Final Report Document: [PDF](https://drive.google.com/file/d/1WYKLaSuP1PDZrhbZOaBxEEZIGiFjHoIg/view?usp=sharing)
+- Final Presentation Deck: [PPT](https://www.canva.com/design/DAG8sq660y0/jDva6ozEapW7sLgyjt_v-Q/view?utm_content=DAG8sq660y0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9aea92d210)
+- Video Demonstration: [YT](https://youtu.be/NAg2-dQQVyY?si=xNfihcJk6g3JzzbY)
+
+(all documentation in Bahasa Indonesia)
+
 ### Team:
 - Muhammad Adli Syauqi (13224082)
 - Muhammad Ammar Hanif (13224087)
